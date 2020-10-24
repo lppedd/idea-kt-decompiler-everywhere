@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.5.0'
+}
+
+group 'com.github.lppedd'
+version '0.1.0'
+
+sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.github.bsideup.jabel:jabel-javac-plugin:0.3.0'
+}
+
+intellij {
+    version 'IC-2019.3'
+    downloadSources true
+    plugins = [
+            'java',
+            'Kotlin',
+            'org.jetbrains.java.decompiler'
+    ]
+}
+
+patchPluginXml {
+    version project.version
+    sinceBuild '193'
+    untilBuild null
+    changeNotes = new File("change_notes/${version.replace('.', '_')}.html").getText('UTF-8')
+    pluginDescription = new File('plugin_description.html').getText('UTF-8')
+}
+
+compileJava {
+    options.fork = true
+    options.compilerArgs = [
+            '--release', '8', '-Xplugin:jabel'
+    ]
+}

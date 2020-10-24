@@ -1,0 +1,22 @@
+<idea-plugin>
+  <id>com.github.lppedd.idea-kt-as-java-decompiler</id>
+  <name>Kotlin as Java Decompiler</name>
+  <vendor
+      email="lp.edoardo@gmail.com"
+      url="https://github.com/lppedd/idea-kt-as-java-decompiler"
+  >
+    Edoardo Luppi
+  </vendor>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>org.jetbrains.java.decompiler</depends>
+  <depends>org.jetbrains.kotlin</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!--suppress PluginXmlDynamicPlugin -->
+    <psi.classFileDecompiler
+        order="first"
+        implementation="com.github.lppedd.decompiler.KotlinAsJavaClassFileDecompiler"
+    />
+  </extensions>
+</idea-plugin>
