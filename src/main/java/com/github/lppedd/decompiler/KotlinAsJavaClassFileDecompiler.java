@@ -42,18 +42,14 @@ class KotlinAsJavaClassFileDecompiler extends Full {
 
   @NotNull
   static ExtensionPointName<Decompiler> getDecompilerEp() {
-    final var service = getService(ClassFileDecompilers.class);
-
-    if (service != null) {
-      // IDEA 202.5792+
-      // noinspection AccessStaticViaInstance
-      return service.EP_NAME;
-    }
-
     try {
       final var epName = ClassFileDecompilers.class.getDeclaredField("EP_NAME");
+      final var service = getService(ClassFileDecompilers.class);
       epName.setAccessible(true);
-      return (ExtensionPointName<Decompiler>) epName.get(null);
+
+      // service is going to be non-null on IDEA 202.5792+
+      // This is ok since in earlier releases the EP_NAME field is static
+      return (ExtensionPointName<Decompiler>) epName.get(service);
     } catch (final NoSuchFieldException | IllegalAccessException e) {
       throw new IllegalStateException("ClassFileDecompilers.EP_NAME should be static", e);
     }
