@@ -12,6 +12,8 @@ Looking for the latest **plugin binaries**? Get them [here][1] as `.zip`
 This plugin allows viewing decompiled Kotlin <code>.class</code> files as Java code.  
 That means you'll be able to look at everything, instead of only the basic stubs.
 
+<img src="https://raw.githubusercontent.com/lppedd/idea-kt-as-java-decompiler/master/images/before_after.png" alt="Before/After">
+
 -----
 
 ## Author
