@@ -2,7 +2,7 @@
 
 # Kotlin as Java Decompiler
 
-### Available @ [JetBrains Plugins Repository][2]
+### ~~Available @ JetBrains Plugins Repository~~ (suspended until issue [#1][2] is resolved)
 
 Looking for the latest **plugin binaries**? Get them [here][1] as `.zip`  
 <small>Supported IDE versions: `193.*` to `*` (inclusive)</small> 
@@ -21,4 +21,4 @@ That means you'll be able to look at everything, instead of only the basic stubs
  - Edoardo Luppi (<lp.edoardo@gmail.com>)
 
 [1]: https://github.com/lppedd/idea-kt-as-java-decompiler/releases
-[2]: https://plugins.jetbrains.com/plugin/15264-kotlin-as-java-decompiler
+[2]: https://github.com/lppedd/idea-kt-as-java-decompiler/issues/1
