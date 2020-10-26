@@ -2,7 +2,7 @@
 
 # Kotlin Decompiler Everywhere
 
-### ~~Available @ JetBrains Plugins Repository~~ (suspended until issue [#1][2] is resolved)
+### Available @ [JetBrains Plugins Repository][2]
 
 Looking for the latest **plugin binaries**? Get them [here][1] as `.zip`  
 <small>Supported IDE versions: `193.*` to `*` (inclusive)</small> 
@@ -24,4 +24,4 @@ without the need for an external decompiler.
  - Edoardo Luppi (<lp.edoardo@gmail.com>)
 
 [1]: https://github.com/lppedd/idea-kt-decompiler-everywhere/releases
-[2]: https://github.com/lppedd/idea-kt-decompiler-everywhere/issues/1
+[2]: https://plugins.jetbrains.com/plugin/15275-kotlin-decompiler-everywhere
