@@ -1,4 +1,4 @@
-<img align="left" width="85" height="85" src="https://raw.githubusercontent.com/lppedd/idea-kt-as-java-decompiler/master/images/logo.png" alt="Plugin logo">
+<img align="left" width="85" height="85" src="https://raw.githubusercontent.com/lppedd/idea-kt-decompiler-everywhere/master/images/logo.png" alt="Plugin logo">
 
 # Kotlin Decompiler Everywhere
 
@@ -15,7 +15,7 @@ even when the IDE doesn't provide the option.
 That means you'll be able to look at everything, instead of only the basic stubs,
 without the need for an external decompiler.
 
-<img src="https://raw.githubusercontent.com/lppedd/idea-kt-as-java-decompiler/master/images/before_after.png" alt="Before/After">
+<img src="https://raw.githubusercontent.com/lppedd/idea-kt-decompiler-everywhere/master/images/before_after.png" alt="Before/After">
 
 -----
 
@@ -23,5 +23,5 @@ without the need for an external decompiler.
 
  - Edoardo Luppi (<lp.edoardo@gmail.com>)
 
-[1]: https://github.com/lppedd/idea-kt-as-java-decompiler/releases
-[2]: https://github.com/lppedd/idea-kt-as-java-decompiler/issues/1
+[1]: https://github.com/lppedd/idea-kt-decompiler-everywhere/releases
+[2]: https://github.com/lppedd/idea-kt-decompiler-everywhere/issues/1
