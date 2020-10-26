@@ -1,6 +1,6 @@
 <img align="left" width="85" height="85" src="https://raw.githubusercontent.com/lppedd/idea-kt-as-java-decompiler/master/images/logo.png" alt="Plugin logo">
 
-# Kotlin as Java Decompiler
+# Kotlin Decompiler Everywhere
 
 ### ~~Available @ JetBrains Plugins Repository~~ (suspended until issue [#1][2] is resolved)
 
