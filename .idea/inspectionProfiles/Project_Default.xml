@@ -254,6 +254,7 @@
           <option value="JavaReflectionMemberAccess" />
           <option value="AccessStaticViaInstance" />
           <option value="IncorrectParentDisposable" />
+          <option value="StaticVariableUsedBeforeInitialization" />
         </list>
       </option>
     </inspection_tool>

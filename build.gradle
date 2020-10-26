@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.github.lppedd'
-version '0.1.1'
+version '0.2.0'
 
 sourceCompatibility = JavaVersion.VERSION_11
 
@@ -20,11 +20,7 @@ dependencies {
 intellij {
     version 'IC-2019.3'
     downloadSources true
-    plugins = [
-            'java',
-            'Kotlin',
-            'org.jetbrains.java.decompiler'
-    ]
+    plugins = ['java', 'Kotlin']
 }
 
 patchPluginXml {
